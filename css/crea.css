@@ -1,0 +1,44 @@
+:root {
+    --claro: #EFE6DD;
+    --rojo: #BB4430;
+    --negro: #231F20;
+    --azul: #7EBDC2;
+    --amarillo: #F3DFA2;
+}
+
+* {
+    text-align: center;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-image: linear-gradient(to top, var(--amarillo) 0%, var(--claro) 100%);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contenedor-campos {
+    color: var(--claro);
+}
+
+.titulo2 {
+    font-size: 4rem;
+}
+
+#registro {
+    align-items: center;
+    color: var(--claro);
+    margin-left: 30%;
+}

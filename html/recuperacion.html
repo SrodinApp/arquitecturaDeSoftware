@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/olvido.css">
 </head>
 <body>
-    <section class="hero-inicio-secion">
-        <div class="contenido-inicio-secion">
+    <section class="contenedor-principal">
+
+        <header class="titulo">
             <h2>Recuperacion de cuenta</h2>
+        </header>
+
             <form action="" method="post">
                 <fieldset>
                     <legend>Digita tu correo, para recuperar acceso</legend>
-                    <div>
-                        <label for="correo">Correo:</label>
-                        <input type="email" id="correo" name="correo" placeholder="tucorreo@correo.com">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="correo">Correo:</label>
+                            <input type="email" id="correo" name="correo" placeholder="tucorreo@correo.com" class="input-text">
+                        </div>
+    
+                        <div>
+                            <input type="submit" value="Enviar correo" class="boton">
+                        </div>
+    
+                        <div class="mensaje">
+                            <P>¿No tienes cuenta? <a href="creacionC.html">Crear Cuenta</a></P>
+                        </div>
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar correo">
-                    </div>
-                    <div>
-                        <P>¿No tienes cuenta? <a href="creacionC.html">Crear Cuenta</a></P>
-                    </div>
+
                 </fieldset>
-            </form>
-        </div>
+            </form>        
     </section>
 </body>
 </html>

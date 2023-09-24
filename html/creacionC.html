@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompaApp</title>
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/crea.css">
 </head>
 <body>
 
-    <header>
-        <h1 class="titulo">Compa Compa App</h1>
+    <header class="titulo">
+        <h1>Compa Compa App</h1>
     </header>
 
-    <section class="hero-inicio-secion">
-        <div class="contenido-inicio-secion">
-            <h2>Creacion de Cuenta</h2>
-            <form action="" method="post">
+    <section class="contedor-inicio" id="registro">    
+            <h2 class="titulo2">Creación de Cuenta</h2>
+            <form action="../php/registro.php" method="POST">
                 <fieldset>
-                    <legend>Completa tus datos</legend>
-                    <div>
+                    <legend id="sub-titulo">Completa tus datos</legend>
+                    <div class="contenedor-campos">
                         <label for="nombres">Nombres:</label>
-                        <input type="text" id="nombres" name="nombres" placeholder="Tu nombre">
+                        <input class="input-text" type="text" id="nombres" name="nombres" placeholder="Tu nombre">
                     </div>
-                    <div>
+                    <div class="contenedor-campos">
                         <label for="apellidos">Apellidos:</label>
-                        <input type="text" id="apellidos" name="apellidos" placeholder="Tu apellido">
+                        <input class="input-text" type="text" id="apellidos" name="apellidos" placeholder="Tu apellido">
                     </div>
-                    <div>
+                    <div class="contenedor-campos">
                         <label for="cumpleanos">Fecha de cumpleaños:</label>
-                        <input type="date" id="cumpleanos" name="cumpleanos">
+                        <input class="input-text" type="date" id="cumpleanos" name="cumpleanos">
                     </div>
-                    <div>
+                    <div class="contenedor-campos">
                         <label for="correo">Correo:</label>
-                        <input type="email" id="correo" name="correo" placeholder="Tu correo">
+                        <input class="input-text" type="email" id="correo" name="correo" placeholder="Tu correo">
+                    </div>
+                    <div class="contenedor-campos">
+                        <label for="contrasena">Contraseña:</label>
+                        <input class="input-text" type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña">
                     </div>
                     <div>
                         <label for="recibir-correo">¿Deseas recibir correos del compa compa?:</label>
                         <input type="checkbox" id="recibir-correo" name="recibir-correo" placeholder="recibir-correo">
                     </div>
                     <div>
-                        <input type="submit" value="Registrarse">
+                        <input type="submit" value="Registrarse" class="boton">
                     </div>
-                    <div>
+                    <div class="texto-gia">
                         <a href="../index.html">¿Ya tienes cuenta?</a>
                     </div>
                 </fieldset>
             </form>
-        </div>
     </section>
 
 </body>
